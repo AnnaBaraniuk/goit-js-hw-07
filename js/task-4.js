@@ -10,8 +10,8 @@ function handleSubmit(event) {
   };
   if (data.email === "" || data.password === "") {
     alert("All form fields must be filled in");
+  } else {
+    console.log(data);
+    event.currentTarget.reset();
   }
-
-  console.log(data);
-  event.currentTarget.reset();
 }

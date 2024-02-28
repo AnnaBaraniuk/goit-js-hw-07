@@ -1,4 +1,4 @@
-const galleryConteiner = document.querySelector(".gallery");
+const galleryContainer = document.querySelector(".gallery");
 
 const images = [
   {
@@ -21,5 +21,5 @@ const markup = images
       `<li><img src="${images.url}" alt="${images.alt}" width = "360" height = "300"></li>`
   )
   .join("");
-galleryConteiner.insertAdjacentHTML("beforeend", markup);
-console.log(galleryConteiner);
+galleryContainer.insertAdjacentHTML("beforeend", markup);
+console.log(galleryContainer);
